@@ -13,6 +13,7 @@ import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.html.Div;
+import com.vaadin.flow.component.littemplate.LitTemplate;
 import com.vaadin.flow.component.polymertemplate.Id;
 import com.vaadin.flow.component.polymertemplate.PolymerTemplate;
 import com.vaadin.flow.dom.Style;
@@ -30,8 +31,8 @@ import java.util.Objects;
  * Different to the {@link com.vaadin.flow.component.orderedlayout.VerticalLayout} and {@link com.vaadin.flow.component.orderedlayout.HorizontalLayout} a {@link GridLayout} can span its elements over multiple rows.
  */
 @Tag("grid-layout")
-@JsModule("./com/github/appreciated/grid-layout/grid-layout.js")
-public class GridLayout extends PolymerTemplate<TemplateModel> implements GridLayoutComponent {
+@JsModule("./com/github/appreciated/grid-layout/grid-layout.ts")
+public class GridLayout extends LitTemplate implements GridLayoutComponent {
     @Id("grid-layout-element")
     Div gridLayout;
 
